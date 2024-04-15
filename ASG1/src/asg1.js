@@ -147,10 +147,13 @@ var lightGray = [0.8, 0.8, 0.8, 1.0];
     [white, -0.41, 0.06, -0.35, 0.06, -0.45, 0.04],
     [white, -0.41, 0.06, -0.46, 0.05, -0.46, 0.0],
 
-    // dgray
+    // dgray -> for the nose
 
     [darkGray, -0.52, 0.0, -0.47, -0.05, -0.57, -0.05],
-    // [white, -0.41, 0.06, -0.46, 0.05, -0.57, -0.05],
+    [darkGray, -0.57, -0.05, -0.52, -0.1, -0.47, -0.05],
+
+    // [lightGray, -0.24, 0.11, -0.24, 0.0, -0.29, -0.07],
+    // [lightGray, -0.29, -0.07, -0.29, -0.05, -0.24, 0.0],
 
 
 
@@ -170,7 +173,7 @@ var lightGray = [0.8, 0.8, 0.8, 1.0];
 }
 
 function setTriangleColor(color) {
-  // Uses the uniform location of u_FragColor obtained in your shader setup
+  // Uses the uniform location of u_FragColor obtained in shader setup
   gl.uniform4f(u_FragColor, color[0], color[1], color[2], color[3]);
 }
 
